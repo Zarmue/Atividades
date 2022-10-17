@@ -1,22 +1,23 @@
 Algoritmo "Calculadora"
 
 Var
+batata
    opcao, N, N2, R : real
 
 Inicio
    enquanto opcao <> 5 faca
       R <- 0
       escreval("Calculadora")
-      escreval("Dígite um Número:")
+      escreval("DÃ­gite um NÃºmero:")
       leia(N)
-      escreval("Dígite outro Número")
+      escreval("DÃ­gite outro NÃºmero")
       leia(N2)
       escreval("Qual Operador Deseja Usar?")
-      escreval("Dígite[1] para +")
-      escreval("Dígite[2] para -")
-      escreval("Dígite[3] para /")
-      escreval("Dígite[4] para x")
-      escreval("Dígite[5] para Sair")
+      escreval("DÃ­gite[1] para +")
+      escreval("DÃ­gite[2] para -")
+      escreval("DÃ­gite[3] para /")
+      escreval("DÃ­gite[4] para x")
+      escreval("DÃ­gite[5] para Sair")
       leia(opcao)
       escolha(opcao)
       caso 1
