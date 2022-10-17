@@ -1,7 +1,6 @@
 Algoritmo "Calculadora"
 
 Var
-batata
    opcao, N, N2, R : real
 
 Inicio
