@@ -1,0 +1,48 @@
+Algoritmo "Cobaia"
+
+Var
+   Numero_inteiro, Rato, Sapo, Coelho, i, cobaias, Total, C1, S1, R1, PC, PS, PR : inteiro
+   Tipos : caractere
+
+Inicio
+R1 <- 0
+S1 <- 0
+C1 <- 0
+   escreval("Quantos casos de teste serao digitados?")
+   leia(Numero_inteiro)
+   para i de 1 ate Numero_inteiro faca
+      escreval("Quantidade de cobaias:")
+      leia(cobaias)
+      escreval("Tipo de cobaia: ")
+      leia(Tipos)
+      escolha Tipos
+
+      caso "C", "c"
+      Coelho <- Coelho + cobaias
+
+      
+      caso "S", "s"
+      Sapo <- Sapo + cobaias
+
+      
+      caso "R", "r"
+      Rato <- Rato + cobaias
+
+      fimescolha
+      fimpara
+      
+      Total <- Total + Coelho + Rato + Sapo
+      
+      escreval("RELATORIO FINAL:")
+      escreval("Total:", Total, " Cobaias " )
+      escreval("Total de coelhos:", Coelho )
+      escreval("Total de ratos:", Rato )
+      escreval("Total de sapos:", Sapo )
+      
+      PC <- Coelho * 100 \ Total
+      PS <- Sapo * 100 \ Total
+      PR <- Rato * 100 \ Total
+      
+      escreval("Percentual de coelhos: ", PC:1:2)
+      escreval("Percentual de ratos: ", PR:1:2)
+      escreval("Percentual de sapos: ", PS:1:2)
